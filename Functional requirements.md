@@ -21,6 +21,7 @@
     - Tracks stock levels in real time.
     - Automatically reserves items for confirmed orders.
     - Sends replenishment requests to suppliers when stock levels are low.
+    - Authorized inventory staff can add, update, or delete products, including details such as product name, description, and price, ensuring an up-to-date product catalog.
 6. **Logistics & Shipping**
     
     - Plans shipment routes and assigns courier services.
