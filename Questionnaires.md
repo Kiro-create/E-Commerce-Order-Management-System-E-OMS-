@@ -74,5 +74,5 @@ Non-functional requirements describe system characteristics, constraints, and pe
 |**Usability**|**U1:** The user interface (screens/reports) must be simple enough to require less than 1 hour of new user training per module.|[ ]|[ ]|[ ]|[ ]|[ ]|
 |**Security**|**S1:** The system must meet all current industry standards for securely handling customer payment details (Finance).|[ ]|[ ]|[ ]|[ ]|[ ]|
 
-8. **Open Feedback:** Please provide any additional suggestions regarding current processes or essential features the new E-OMS must include to make your job more efficient.
+8. **Open Feedback:** 
     - ---
