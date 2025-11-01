@@ -100,7 +100,6 @@ Our activities align with the Systems Development Lifecycle (SDLC), specifically
 ### 3. Verification of Effectiveness
 
 We verified the effectiveness of the generated user stories and Acceptance Criteria based on the rules outlined in the sources:
-
 - **User Story Verification:** Each story was confirmed to be effective because it:
     - **Covers a small chunk of functionality**.
     - **Delivers value on its own**.
