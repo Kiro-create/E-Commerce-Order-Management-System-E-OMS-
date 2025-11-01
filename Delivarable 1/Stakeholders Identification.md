@@ -14,3 +14,6 @@
 | **Executive Stakeholders**   | **Company Management / Executives**                                      | Use system reports for business decisions and financial planning.         | Sales performance analytics, cost tracking, and KPI dashboards.                          |
 |                              | **System Administrators**                                                | Oversee system performance, maintenance, and user access.                 | System stability, data integrity, and user permissions management.                       |
 
+
+
+

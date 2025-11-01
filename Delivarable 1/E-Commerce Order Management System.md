@@ -15,7 +15,7 @@
 This project designs an integrated **Order Management System (E-OMS)** for _E-Market Inc._, an online retailer offering electronics, apparel, and household products.  
 The system connects major departments — _Sales, Finance, Inventory, Logistics,_ and _Customer Support_ — while integrating with external partners such as _payment gateways, suppliers,_ and _courier services_.
 
-The goal is to model and automate the full **order lifecycle** — from order placement to final delivery — applying _Systems Analysis and Design_ principles to improve coordination, accuracy, and efficiency.
+The goal is to model and automate the full **order lifecycle** — from product catalog to order placement to final delivery — applying _Systems Analysis and Design_ principles to improve coordination, accuracy, and efficiency.
 
 ---
 
