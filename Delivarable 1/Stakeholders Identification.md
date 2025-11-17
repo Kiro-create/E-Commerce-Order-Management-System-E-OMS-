@@ -1,0 +1,19 @@
+
+| **Stakeholder Type**         | **Stakeholder(s)**                                                       | **Role / Interest in the System**                                         | **Aspects of the System Important to Them**                                              |
+| ---------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Internal Stakeholders**    | **Sales Department**                                                     | Validates orders, checks customer and product information before payment. | Order accuracy, pricing validation, and smooth transition to payment stage.              |
+|                              | **Finance / Payment Department**                                         | Manages and authorizes customer payments and invoices.                    | Secure payment process, error-free billing, and payment gateway integration.             |
+|                              | **Inventory / Warehouse Team**                                           | Tracks stock levels and manages product availability.                     | Real-time stock visibility, automatic restocking alerts, and reservation accuracy.       |
+|                              | **Logistics Department**                                                 | Plans shipping, assigns couriers, and updates delivery status.            | Shipment tracking, route optimization, and delivery timing.                              |
+|                              | **Customer Support Team**                                                | Handles customer inquiries, complaints, and return requests.              | Access to customer order data, refund processing, and communication tools.               |
+| **External Stakeholders**    | **Customers (End Users)**                                                | Place orders, make payments, and track deliveries.                        | Easy checkout, order tracking, fast delivery, and secure payments.                       |
+|                              | **Suppliers / Vendors**                                                  | Provide products when inventory is low.                                   | Order requests, delivery timelines, and stock management visibility.                     |
+|                              | **Payment Gateways (e.g., PayPal, Visa, MasterCard)**                    | Process and verify online payments securely.                              | Smooth API connection, transaction confirmation speed, and fraud protection.             |
+|                              | **Courier / Delivery Companies**                                         | Deliver products from warehouses to customers.                            | Accurate delivery details, order tracking updates, and timely pickup schedules.          |
+| **Operational Stakeholders** | **Sales, Finance, Inventory, Logistics, and Customer Support Employees** | Regularly interact with the system to perform daily operations.           | Reliable user interface, fast response time, and accurate data exchange between modules. |
+| **Executive Stakeholders**   | **Company Management / Executives**                                      | Use system reports for business decisions and financial planning.         | Sales performance analytics, cost tracking, and KPI dashboards.                          |
+|                              | **System Administrators**                                                | Oversee system performance, maintenance, and user access.                 | System stability, data integrity, and user permissions management.                       |
+
+
+
+
