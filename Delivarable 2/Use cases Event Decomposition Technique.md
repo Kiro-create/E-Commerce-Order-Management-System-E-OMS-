@@ -29,7 +29,7 @@
 | **Initiate Return Request**     | Allows the Customer to submit a request for a return or refund via the designated system interface, ensuring the initiation of the returns and refunds workflow.                                                                                                                                          |
 | **Look Up Order History**       | Allows the Customer Support Agent to search for and access a complete history of a customer's orders, status, and associated return/refund requests to reduce resolution time.                                                                                                                            |
 | **Generate Management Reports** | Provides Managers and Executives with integrated analytical and summary reports displaying current data on Key Performance Indicators (KPIs) to aid in business decisions.                                                                                                                                |
-| **Manage User Permissions**     | Allows the System Administrator to manage user roles and specific access permissions for staff to enforce system security and maintain data integrity.                                                                                                                                                    |
+| **Manage User Permissions**     | Allows the System Administrator to manage user roles and specific access permissions for staff to enforce system security and maintain data .                                                                                                                                                    |
 
 
 
