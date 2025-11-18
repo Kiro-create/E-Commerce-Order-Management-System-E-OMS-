@@ -150,41 +150,31 @@ These events do not contribute to business processes and therefore are not inclu
 
 ## 3.2 Event–Use Case Mapping
 
-| Event (Trigger)                            | Type           | Use Case Triggered                           |
-| ------------------------------------------ | -------------- | -------------------------------------------- |
-| Customer submits order                     | External Event | Place Online Order (US7)                     |
-| Order details require verification         | State Event    | Verify Order Details (US1)                   |
-| Customer submits payment details           | External Event | Process Customer Payment (US4)               |
-| Payment Gateway returns status code        | External Event | Handle Payment Authorization Response (US11) |
-| Order receives payment confirmation        | State Event    | Reserve Inventory (US2)                      |
-| Inventory Staff initiates catalog update   | External Event | Manage Product Catalog (US3)                 |
-| Stock level drops below reorder point      | State Event    | Send Replenishment Request (US10)            |
-| Inventory confirms order is packaged       | State Event    | Plan Shipment (US5)                          |
-| Shipment manifest requires transmission    | State Event    | Transmit Shipment Manifest (US12)            |
-| Customer requests order status             | External Event | Track Order Status (US8)                     |
-| Customer submits return request            | External Event | Initiate Return Request (US9)                |
-| Customer Support Agent needs order history | External Event | Look Up Order History (US6)                  |
-| **Time to generate management reports**    | Temporal Event | Generate Management Reports (US13)           |
-| System Administrator updates permissions   | External Event | Manage User Permissions (US14)               |
+| Event (Trigger)                            | Type           | Use Case Triggered                 |
+| ------------------------------------------ | -------------- | ---------------------------------- |
+| Customer submits order                     | External Event | Place Online Order (US7)           |
+| Customer submits payment details           | External Event | Process Customer Payment (US4)     |
+| Inventory Staff initiates catalog update   | External Event | Manage Product Catalog (US3)       |
+| Inventory confirms order is packaged       | State Event    | Plan Shipment (US5)                |
+| Customer requests order status             | External Event | Track Order Status (US8)           |
+| Customer submits return request            | External Event | Initiate Return Request (US9)      |
+| Customer Support Agent needs order history | External Event | Look Up Order History (US6)        |
+| **Time to generate management reports**    | Temporal Event | Generate Management Reports (US13) |
+| System Administrator updates permissions   | External Event | Manage User Permissions (US14)     |
 
 # 3.3 Brief Use Case Descriptions
 
-| #   | Use Case Name                     | ID   | Brief Description                                                                 |
-| --- | --------------------------------- | ---- | --------------------------------------------------------------------------------- |
-| 1   | Place Online Order                | US7  | Customer submits an online order, selecting items and providing delivery details. |
-| 2   | Verify Order Details              | US1  | Sales Staff or system verifies order accuracy before payment processing.          |
-| 3   | Reserve Inventory                 | US2  | System reserves ordered items after payment and updates stock levels.             |
-| 4   | Manage Product Catalog            | US3  | Inventory Staff adds, edits, or removes products from the catalog.                |
-| 5   | Process Customer Payment          | US4  | Customer payment is processed through the payment gateway.                        |
-| 6   | Plan Shipment                     | US5  | Logistics Staff plans and prepares shipment once items are packaged.              |
-| 7   | Look Up Order History             | US6  | Customer Support Agent retrieves a customer’s complete order history.             |
-| 8   | Track Order Status                | US8  | Customer checks the current status of their order using a tracking ID.            |
-| 9   | Initiate Return Request           | US9  | Customer submits a request to return or refund an order.                          |
-| 10  | Send Replenishment Request        | US10 | System sends restocking request when inventory falls below a threshold.           |
-| 11  | Handle Payment Authorization Resp | US11 | System receives and processes the payment authorization result from gateway.      |
-| 12  | Transmit Shipment Manifest        | US12 | System sends shipment manifest to the Delivery Company.                           |
-| 13  | Generate Management Reports       | US13 | System generates periodic management and KPI reports.                             |
-| 14  | Manage User Permissions           | US14 | Administrator updates system user roles and permissions.                          |
+| #   | Use Case Name               | ID   | Brief Description                                                                 |
+| --- | --------------------------- | ---- | --------------------------------------------------------------------------------- |
+| 1   | Place Online Order          | US7  | Customer builds order; system validates details and generates Order ID.           |
+| 2   | Manage Product Catalog      | US3  | Inventory Staff adds, edits, or removes products from the catalog.                |
+| 3   | Process Customer Payment    | US4  | System securely validates, authorizes, and records payment; updates order status. |
+| 4   | Plan Shipment               | US5  | Logistics Staff plans and prepares shipment once items are packaged.              |
+| 5   | Look Up Order History       | US6  | Customer Support Agent retrieves a customer’s complete order history.             |
+| 6   | Track Order Status          | US8  | Customer checks the current status of their order using a tracking ID.            |
+| 7   | Initiate Return Request     | US9  | Customer submits a request to return or refund an order.                          |
+| 8   | Generate Management Reports | US13 | System generates periodic management and KPI reports.                             |
+| 9   | Manage User Permissions     | US14 | Administrator updates system user roles and permissions.                          |
 
 ---
 
