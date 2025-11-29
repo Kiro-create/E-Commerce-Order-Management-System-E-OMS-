@@ -207,8 +207,7 @@ These use cases activate ONLY under certain conditions.
 
 # 6. UML Use Case Diagram
 
-![[UseCaseDiagram.jpg]]
-
+![Use Case Diagram](Use_Case_Diagram/Use_Case_Diagram.jpg)
 
 ## Key Relationships (Textual)
 
@@ -244,18 +243,15 @@ These use cases activate ONLY under certain conditions.
 
 # 7. Jira Project Management Evidence
 
-![[image.png]]
-![[Pasted image 20251116172733.png]]
+![Jira Screenshot 2](../Screenshots/Jira3.png)
+![Jira Screenshot 2](../Screenshots/Jira4.png)
 
 # 8. GitHub Evidence
 
 Repository Link: [https://github.com/Kiro-create/E-Commerce-Order-Management-System-E-OMS-](https://github.com/Kiro-create/E-Commerce-Order-Management-System-E-OMS-)
-
-(Repository referenced in project documentation; contains source files, user stories, and system vision documentation.)
+(All work, commits and pull requests are visible on GitHub.)
 
 # 9. Conclusion
-
-## Conclusion
 
 The E-Commerce Order Management System (E-OMS) was successfully analyzed using a structured event-driven approach. Through the Event Decomposition Technique, all external, state, and temporal triggers were identified and mapped to their corresponding use cases, ensuring full coverage of system functionality. The identification of primary actors and their interactions with the system clarified the operational boundaries and responsibilities within the business process.
 

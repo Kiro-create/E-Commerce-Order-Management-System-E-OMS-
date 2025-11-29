@@ -211,7 +211,8 @@ Non-functional requirements describe system characteristics, constraints, and pe
 
 ---
 # Activity Diagram
-![[ActivityDiagram1.jpg]]
+![Activity Diagram](ActivityDiagram1.jpg)
+
 
 ---
 # Screenshots from Jira & GitHub
@@ -219,12 +220,15 @@ Non-functional requirements describe system characteristics, constraints, and pe
 ## Jira
 >Our team utilized Jira for the comprehensive organization and monitoring of Deliverable #1. We structured the project by creating a main Epic, Deliverable #1: System Analysis & Requirements, which served as a container for all related work. This Epic was broken down into User Stories, with each story corresponding to a major section of the technical report, such as the System Vision Document and Workflow Documentation. To ensure clear accountability and a granular breakdown of work, some stories were further divided into specific sub-tasks, which were then assigned to individual team members based on their project roles. Progress was actively monitored using our board, allowing the team leader to visually track tasks as they moved from To Do to In Progress and Done, ensuring all project goals were met on schedule.
 
-![[Pasted image 20251025210805.png]]
-![[image.webp]]
+![Jira Screenshot 1](../Screenshots/Jira1.png)
+
+![Jira Screenshot 2](../Screenshots/Jira2.png)
 
 ## GitHub
 https://github.com/Kiro-create/E-Commerce-Order-Management-System-E-OMS-
 
-![[Pasted image 20251025210935.png]]
-![[Pasted image 20251025210955.png]]
-![[Pasted image 20251025211021.png]]
+![GitHub Screenshot 1](../Screenshots/GitHub1.png)
+
+![GitHub Screenshot 2](../Screenshots/GitHub2.png)
+
+![GitHub Screenshot 3](../Screenshots/GitHub3.png)
