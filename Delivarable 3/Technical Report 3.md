@@ -409,9 +409,23 @@ The CRUD validation for each major domain entity.
 ![SMD1](State-Diagram/Inventory-Item-State-Machine-Diagram.png)
 
 ---
+# Jira Project Management Evidence
+
+![Jira Screenshot 2](../Screenshots/Jira5.jpg)
+![Jira Screenshot 2](../Screenshots/Jira6.jpg)
 # GitHub Evidence
 
 Repository Link: [https://github.com/Kiro-create/E-Commerce-Order-Management-System-E-OMS-](https://github.com/Kiro-create/E-Commerce-Order-Management-System-E-OMS-)
 (All work, commits and pull requests are visible on GitHub.)
 
 # Conclusion
+
+This report presents a comprehensive and systematic analysis of the **E-Commerce Order Management System (E-OMS)** using three foundational requirements modeling techniques: the **Noun Technique**, **CRUD Analysis**, and **Event Decomposition**. Through these methods, the core domain classes, their attributes, relationships, and behavioral responsibilities have been rigorously identified, validated, and refined to ensure alignment with real-world business workflows and user goals.
+
+The final domain model—comprising classes such as `Customer`, `Order`, `Product`, `InventoryItem`, `Payment`, `Shipment`, and specialized `Staff` roles—accurately reflects the system’s scope and captures essential business rules, including order lifecycle management, inventory control, payment processing, returns, and reporting. The use case list has been purified to include only **actor-initiated goals**, eliminating internal system tasks that do not represent user value, thereby ensuring clarity and focus in system design.
+
+Furthermore, the supporting **activity diagrams**, **system sequence diagrams (SSDs)**, and **state machine diagrams** provide dynamic and behavioral validation of the static domain model, illustrating how objects collaborate over time and how key entities like `Order` and `InventoryItem` transition through well-defined states in response to real-world events.
+
+All artifacts and iterations are documented and maintained in the public GitHub repository ([Kiro-create/E-OMS](https://github.com/Kiro-create/E-Commerce-Order-Management-System-E-OMS-)), demonstrating transparency, version control, and adherence to software engineering best practices.
+
+In summary, this analysis delivers a **robust, coherent, and traceable foundation** for the subsequent design and implementation phases of the E-OMS, ensuring that the resulting system will be both functionally complete and aligned with stakeholder needs.
