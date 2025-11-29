@@ -211,7 +211,7 @@ Non-functional requirements describe system characteristics, constraints, and pe
 
 ---
 # Activity Diagram
-![Activity Diagram](ActivityDiagram1.jpg)
+![Activity_Diagram](ActivityDiagram1.jpg)
 
 
 ---
