@@ -416,7 +416,7 @@ The CRUD validation for each major domain entity.
 ---
 # Jira Project Management Evidence
 
-![Jira Screenshot 2](../Screenshots/Jira5.jpg)
+![Jira Screenshot 2](../Screenshots/Jira5.png)
 ![Jira Screenshot 2](../Screenshots/Jira6.jpg)
 # GitHub Evidence
 
