@@ -211,8 +211,7 @@ Non-functional requirements describe system characteristics, constraints, and pe
 
 ---
 # Activity Diagram
-![Activity_Diagram](ActivityDiagram1.jpg)
-
+![Activity Diagram](../Activity_Diagram/ActivityDiagram1.jpg)
 
 ---
 # Screenshots from Jira & GitHub
