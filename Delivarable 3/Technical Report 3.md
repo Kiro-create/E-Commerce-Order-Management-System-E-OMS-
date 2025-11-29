@@ -1,3 +1,5 @@
+# **Report 1**
+
 # Domain Classes; Noun Technique
 
 ## Step 1 — Identify candidate nouns (source: use cases, system vision, technical reports, user stories)
@@ -250,6 +252,7 @@ The CRUD validation for each major domain entity.
 # Activity Diagram
 
 ### Activity Diagram 1:
+#### *Place online order*
 
 ![Activity-Diagram](Activity-Diagram/ad1.jpeg)
 
@@ -257,12 +260,14 @@ The CRUD validation for each major domain entity.
 ---
 
 ### Activity Diagram 2:
+#### *Process Customer Payment*
 
 ![Activity-Diagram](Activity-Diagram/ad2.jpeg)
 
 ---
 
 ### Activity Diagram 3:
+#### *Plan Shipment*
 
 ![Activity-Diagram](Activity-Diagram/ad3.jpeg)
 
@@ -404,7 +409,7 @@ The CRUD validation for each major domain entity.
 
 ---
 
-### Inventory Item State Machine Diagram:
+### InventoryItem State Machine Diagram:
 
 ![SMD1](State-Diagram/Inventory-Item-State-Machine-Diagram.png)
 
