@@ -65,4 +65,4 @@ Non-functional requirements describe system characteristics, constraints, and pe
     
 ---
 # Activity Diagram
-![[ActivityDiagram1.jpg]]
+![Activity Diagram](ActivityDiagram1.jpg)
