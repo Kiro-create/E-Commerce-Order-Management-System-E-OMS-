@@ -86,7 +86,8 @@ Customer; Order; OrderItem; Product; InventoryItem; Warehouse; Supplier; Repleni
 
 ## Step 6 — Class Diagram
 
-![[domain-model-class-diagram.png]]
+![Domain Model](domain-model-class-diagram.png)
+
 
 
 
