@@ -3,7 +3,7 @@
 
 ---
 
-### 1. Internal – Operational Stakeholders
+### 1. External – Operational Stakeholders
 
 These stakeholders (Sales, Finance, Inventory, Logistics, and Customer Support Employees) interact with the system regularly to perform daily operations.
 
@@ -18,7 +18,7 @@ These stakeholders (Sales, Finance, Inventory, Logistics, and Customer Support E
 
 ---
 
-### 2. External – Operational Stakeholders
+### 2. External – Operational Stakeholders (Customers)
 
 The primary external operational stakeholders are the **Customers** (End Users).
 
@@ -30,7 +30,7 @@ The primary external operational stakeholders are the **Customers** (End Users).
 
 ---
 
-### 3. External – Partner Stakeholders
+### 3. External – Operational Stakeholders (Partners)
 
 External partners include Suppliers, Payment Gateways, and Courier/Delivery Companies.
 
@@ -46,25 +46,24 @@ External partners include Suppliers, Payment Gateways, and Courier/Delivery Comp
 
 These stakeholders (Management and System Administrators) monitor operations and define strategic metrics.
 
-|**Role**|**Goal**|**Benefit**|
-|---|---|---|
-|**Manager / Executive**|I want to **view integrated analytical and summary reports**|so that I can **monitor sales performance, track KPIs, and oversee system performance**.|
-|**System Administrator**|I want to **manage user roles and specific access permissions** for all staff|so that I can **enforce system security (S1) and maintain data integrity**.|
+| **Role**                 | **Goal**                                                                      | **Benefit**                                                                              |
+| ------------------------ | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Manager / Executive**  | I want to **view integrated analytical and summary reports**                  | so that I can **monitor sales performance, track KPIs, and oversee system performance**. |
+| **System Administrator** | I want to **manage user roles and specific access permissions** for all staff | so that I can **enforce system security (S1) and maintain data integrity**.              |
 
 ---
-
 ## II. Acceptance Criteria (E-OMS)
 
-### 1. Internal – Operational Stakeholders
+### 1. External – Operational Stakeholders
 
-|**User Story**|**Acceptance Criteria (Given-When-Then Format)**|
-|---|---|
-|**US 1 (Sales Staff):**|**Given:** A customer has placed an order and the order details are available. **When:** The Sales module completes the automated Order Verification process. **Then:** The system checks product data and customer information validity; **And** if valid, the status updates to 'Awaiting Payment'; **Else** the order is automatically cancelled, and the customer is notified.|
-|**US 2 (Inventory Staff - Reservation):**|**Given:** An order has successfully received payment confirmation. **When:** The Inventory module receives the order confirmation; **Then** the system checks real-time stock levels; **And** if in stock, the system automatically decreases the available stock count and marks the item(s) as reserved for that unique Order ID.|
-|**US 3 (Inventory Staff - Catalog):**|**Given:** The Inventory Staff is logged in with authorized permissions. **When:** The staff submits a modification (add, update, or delete) to a product's details (name, description, or price). **Then:** The system saves the changes immediately and validates the required fields; **And** the updated product details are instantly reflected in the Online Product Catalog viewable by customers.|
-|**US 4 (Finance Staff):**|**Given:** The order status is 'Awaiting Payment' and customer payment details are passed securely. **When:** The Finance module requests authorization from the integrated payment gateway. **Then:** The payment gateway returns a status code (Success or Failure); **And** the system confirms or cancels the order based on the response; **And** all data handling associated with the transaction meets industry security standards (S1).|
-|**US 5 (Logistics Staff):**|**Given:** The Inventory team has confirmed the order is packaged and ready for shipment. **When:** The Logistics staff finalizes shipment planning (e.g., selects courier/route). **Then:** The system successfully communicates with the external Courier Service to generate a unique tracking ID; **And** the estimated delivery date is calculated and assigned to the order.|
-|**US 6 (Customer Support Agent):**|**Given:** A Customer Support Agent enters a customer ID or Order ID into the Support module. **When:** The system executes the search request. **Then:** The system displays all historical orders, their current status, and the current status of any associated returns/refunds workflow; **And** the agent can update the issue status to reflect actions taken until resolution.|
+| **User Story**                            | **Acceptance Criteria (Given-When-Then Format)**                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **US 1 (Sales Staff):**                   | **Given:** A customer has placed an order and the order details are available. **When:** The Sales module completes the automated Order Verification process. **Then:** The system checks product data and customer information validity; **And** if valid, the status updates to 'Awaiting Payment'; **Else** the order is automatically cancelled, and the customer is notified.                                                               |
+| **US 2 (Inventory Staff - Reservation):** | **Given:** An order has successfully received payment confirmation. **When:** The Inventory module receives the order confirmation; **Then** the system checks real-time stock levels; **And** if in stock, the system automatically decreases the available stock count and marks the item(s) as reserved for that unique Order ID.                                                                                                             |
+| **US 3 (Inventory Staff - Catalog):**     | **Given:** The Inventory Staff is logged in with authorized permissions. **When:** The staff submits a modification (add, update, or delete) to a product's details (name, description, or price). **Then:** The system saves the changes immediately and validates the required fields; **And** the updated product details are instantly reflected in the Online Product Catalog viewable by customers.                                        |
+| **US 4 (Finance Staff):**                 | **Given:** The order status is 'Awaiting Payment' and customer payment details are passed securely. **When:** The Finance module requests authorization from the integrated payment gateway. **Then:** The payment gateway returns a status code (Success or Failure); **And** the system confirms or cancels the order based on the response; **And** all data handling associated with the transaction meets industry security standards (S1). |
+| **US 5 (Logistics Staff):**               | **Given:** The Inventory team has confirmed the order is packaged and ready for shipment. **When:** The Logistics staff finalizes shipment planning (e.g., selects courier/route). **Then:** The system successfully communicates with the external Courier Service to generate a unique tracking ID; **And** the estimated delivery date is calculated and assigned to the order.                                                               |
+| **US 6 (Customer Support Agent):**        | **Given:** A Customer Support Agent enters a customer ID or Order ID into the Support module. **When:** The system executes the search request. **Then:** The system displays all historical orders, their current status, and the current status of any associated returns/refunds workflow; **And** the agent can update the issue status to reflect actions taken until resolution.                                                           |
 
 ### 2. External – Operational Stakeholders (Customer)
 
@@ -74,7 +73,7 @@ These stakeholders (Management and System Administrators) monitor operations and
 |**US 8 (Customer - Tracking):**|**Given:** My order has been shipped and I have the unique tracking ID. **When:** I access the order tracking interface using the unique tracking ID. **Then:** The system displays the current operational status (e.g., Shipped, In Transit, Delivered); **And** the estimated delivery date is visible.|
 |**US 9 (Customer - Returns):**|**Given:** I have received the order and the current date is within the allowed return window. **When:** I submit a return request via the designated system interface. **Then:** The system logs the request in the Customer Support module; **And** I receive an automated confirmation (Email/SMS) acknowledging the initiation of the returns process.|
 
-### 3. External – Partner Stakeholders
+### 3. External – Operational Stakeholders (Partners)
 
 |**User Story**|**Acceptance Criteria (Given-When-Then Format)**|
 |---|---|
@@ -82,7 +81,7 @@ These stakeholders (Management and System Administrators) monitor operations and
 |**US 11 (Payment Gateway):**|**Given:** The E-OMS Finance module sends a secure payment request. **When:** The Payment Gateway authorizes the transaction (success or failure). **Then:** The Gateway returns the final status code to the E-OMS; **And** the entire payment authorization process (P1) is completed and reflected in the E-OMS.|
 |**US 12 (Courier/Delivery Company):**|**Given:** The order has been assigned a tracking ID and is marked 'Ready for Pickup' by Logistics. **When:** The Logistics module transmits the shipment manifest to the Courier System. **Then:** The manifest successfully includes the accurate customer delivery address and the unique tracking ID; **And** the Courier System acknowledges receipt of the manifest data.|
 
-### 4. Internal – Executive Stakeholders
+### 4. External – Executive Stakeholders
 
 |**User Story**|**Acceptance Criteria (Given-When-Then Format)**|
 |---|---|
@@ -90,7 +89,6 @@ These stakeholders (Management and System Administrators) monitor operations and
 |**US 14 (System Administrator):**|**Given:** The System Administrator accesses the User Management panel. **When:** They modify the access permissions associated with a specific staff role (e.g., Logistics Staff). **Then:** The user associated with that role can immediately access only the system functions defined by the updated permissions; **And** all changes to permissions are logged securely by the system.|
 
 ---
-
 ## III. User Story Verification
 
 ### 1. Project Context and Objectives (E-OMS)
@@ -101,7 +99,7 @@ The project involves designing an integrated **E-OMS** for E-Market Inc.. The sy
     
 - **Primary Goal:** To **automate and streamline the entire order process**, **ensure accuracy and synchronization between departments**, and **strengthen coordination with external partners**.
     
-- **Stakeholders:** Analysis focused on four key stakeholder categories: **Internal Operational Staff** (Sales, Finance, Inventory, etc.), **External Operational Customers**, **External Partners** (Couriers, Suppliers), and **Executive Stakeholders** (Management, Admins).
+- **Stakeholders:** Analysis focused on four key stakeholder categories: **External Operational Staff** (Sales, Finance, Inventory, etc.), **External Operational Customers**, **External Partners** (Couriers, Suppliers), and **Executive Stakeholders** (Management, Admins).
     
 
 ### 2. Systems Analysis Activity and Techniques Used
@@ -210,39 +208,6 @@ These use cases activate ONLY under certain conditions.
 # 6. UML Use Case Diagram
 
 ![[UseCaseDiagram.jpg]]
-
-## Primary Use Cases
-
-### Use Cases
-- Place Online Order (US7)
-- Verify Order Details (US1)
-- Reserve Inventory (US2)
-- Manage Product Catalog (US3)
-- Process Customer Payment (US4)
-- Plan Shipment (US5)
-- Look Up Order History (US6)
-- Track Order Status (US8)
-- Initiate Return Request (US9)
-- Send Replenishment Request (US10)
-- Handle Payment Authorization Response (US11)
-- Transmit Shipment Manifest (US12)
-- Generate Management Reports (US13)
-- Manage User Permissions (US14)
-
----
-
-## Actors
-- Customer  
-- Sales Staff  
-- Finance Staff  
-- Inventory Staff  
-- Logistics Staff  
-- Customer Support Agent  
-- System Administrator  
-- Payment Gateway  
-- Supplier System  
-- Delivery Company  
-- Manager / Executive  
 
 
 ## Key Relationships (Textual)
