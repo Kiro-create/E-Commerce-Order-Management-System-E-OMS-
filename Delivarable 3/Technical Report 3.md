@@ -423,6 +423,9 @@ The CRUD validation for each major domain entity.
 Repository Link: [https://github.com/Kiro-create/E-Commerce-Order-Management-System-E-OMS-](https://github.com/Kiro-create/E-Commerce-Order-Management-System-E-OMS-)
 (All work, commits and pull requests are visible on GitHub.)
 
+# Volere template report
+
+https://docs.google.com/document/d/1szVBWmwSQDab_s_TMRTw3R99PsScs3whWfUuTEKC-Bw/edit?usp=sharing
 # Conclusion
 
 This report presents a comprehensive and systematic analysis of the **E-Commerce Order Management System (E-OMS)** using three foundational requirements modeling techniques: the **Noun Technique**, **CRUD Analysis**, and **Event Decomposition**. Through these methods, the core domain classes, their attributes, relationships, and behavioral responsibilities have been rigorously identified, validated, and refined to ensure alignment with real-world business workflows and user goals.
