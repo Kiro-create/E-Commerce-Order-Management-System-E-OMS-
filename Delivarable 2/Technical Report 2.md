@@ -167,7 +167,7 @@ These events do not contribute to business processes and therefore are not inclu
 | 1   | Place Online Order          | US7  | Customer builds order; system validates details and generates Order ID.           |
 | 2   | Manage Product Catalog      | US3  | Inventory Staff adds, edits, or removes products from the catalog.                |
 | 3   | Process Customer Payment    | US4  | System securely validates, authorizes, and records payment; updates order status. |
-| 4   | Plan Shipment               | US5  | Logistics Staff plans and prepares shipment once items are packaged.              |
+| 4   | Plan Shipment               | US5  | Logistics Staff edits and reviews shipments                                       |
 | 5   | Look Up Order History       | US6  | Customer Support Agent retrieves a customer’s complete order history.             |
 | 6   | Track Order Status          | US8  | Customer checks the current status of their order using a tracking ID.            |
 | 7   | Initiate Return Request     | US9  | Customer submits a request to return or refund an order.                          |
