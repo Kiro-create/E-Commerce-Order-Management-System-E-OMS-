@@ -42,7 +42,7 @@ Required User Interfaces:
 
 Required User Interfaces:
 
-* Shipment Planning + Order-to-Ship Assignment
+* Shipment Planning Dashboard
 * Shipping Manifest Review Screen
 ---
 
