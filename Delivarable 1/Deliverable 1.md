@@ -28,20 +28,20 @@ The primary goals of the E-OMS are to centralize core processes and provide busi
 ---
 # Stakeholders Identification
 
-| **Stakeholder Type**         | **Stakeholder(s)**                                                       | **Role / Interest in the System**                                         | **Aspects of the System Important to Them**                                              |
-| ---------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| **Internal Stakeholders**    | **Sales Department**                                                     | Validates orders, checks customer and product information before payment. | Order accuracy, pricing validation, and smooth transition to payment stage.              |
-|                              | **Finance / Payment Department**                                         | Manages and authorizes customer payments and invoices.                    | Secure payment process, error-free billing, and payment gateway integration.             |
-|                              | **Inventory / Warehouse Team**                                           | Tracks stock levels and manages product availability.                     | Real-time stock visibility, automatic restocking alerts, and reservation accuracy.       |
-|                              | **Logistics Department**                                                 | Plans shipping, assigns couriers, and updates delivery status.            | Shipment tracking, route optimization, and delivery timing.                              |
-|                              | **Customer Support Team**                                                | Handles customer inquiries, complaints, and return requests.              | Access to customer order data, refund processing, and communication tools.               |
-| **External Stakeholders**    | **Customers (End Users)**                                                | Place orders, make payments, and track deliveries.                        | Easy checkout, order tracking, fast delivery, and secure payments.                       |
-|                              | **Suppliers / Vendors**                                                  | Provide products when inventory is low.                                   | Order requests, delivery timelines, and stock management visibility.                     |
-|                              | **Payment Gateways (e.g., PayPal, Visa, MasterCard)**                    | Process and verify online payments securely.                              | Smooth API connection, transaction confirmation speed, and fraud protection.             |
-|                              | **Courier / Delivery Companies**                                         | Deliver products from warehouses to customers.                            | Accurate delivery details, order tracking updates, and timely pickup schedules.          |
-| **Operational Stakeholders** | **Sales, Finance, Inventory, Logistics, and Customer Support Employees** | Regularly interact with the system to perform daily operations.           | Reliable user interface, fast response time, and accurate data exchange between modules. |
-| **Executive Stakeholders**   | **Company Management / Executives**                                      | Use system reports for business decisions and financial planning.         | Sales performance analytics, cost tracking, and KPI dashboards.                          |
-|                              | **System Administrators**                                                | Oversee system performance, maintenance, and user access.                 | System stability, data integrity, and user permissions management.                       |
+| _Stakeholder Type_                    | _Stakeholder(s)_                        | _Role / Interest in the System_                                           | _Aspects of the System Important to Them_                                              |
+| ------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **External Operational Stakeholders** | _Sales Department_                      | Validates orders, checks customer and product information before payment. | Order accuracy, pricing validation, smooth transition to payment.                      |
+|                                       | _Finance / Payment Department_          | Manages and authorizes customer payments and invoices.                    | Secure payment handling, error-free billing, gateway integration.                      |
+|                                       | _Inventory / Warehouse Team_            | Tracks stock levels and manages product availability.                     | Real-time stock visibility, restocking alerts, reservation accuracy.                   |
+|                                       | _Logistics Department_                  | Plans shipping, assigns couriers, updates delivery status.                | Shipment tracking, route optimization, delivery timing.                                |
+|                                       | _Customer Support Team_                 | Handles customer inquiries, complaints, and return requests.              | Order history access, refund processing, communication tools.                          |
+|                                       | _Customers (End Users)_                 | Place orders, make payments, track deliveries.                            | Easy checkout, accurate tracking, secure payments.                                     |
+|                                       | _Suppliers / Vendors_                   | Provide products when inventory is low.                                   | Replenishment requests, delivery timelines, stock visibility.                          |
+|                                       | _Payment Gateways (PayPal, Visa, etc.)_ | Process and verify online payments.                                       | API reliability, transaction speed, fraud protection.                                  |
+|                                       | _Courier / Delivery Companies_          | Deliver products to customers.                                            | Accurate delivery info, updated manifests, timely pickups.                             |
+| **Internal Stakeholders**             | _Developers / Technical Team_           | Build, maintain, integrate, and support the E-OMS system.                 | Clear requirements, defined APIs, consistent architecture, testability, deployability. |
+| **External Executive Stakeholders**   | _Company Management / Executives_       | Use system reports for business and financial decision-making.            | KPI dashboards, reporting accuracy, cost visibility.                                   |
+|                                       | _System Administrators_                 | Maintain E-Market’s user access and system configuration.                 | Stability, data integrity, permission control, monitoring tools.                       |
 
 ---
 # Functional Requirements
@@ -104,7 +104,7 @@ The primary goals of the E-OMS are to centralize core processes and provide busi
 
 ---
 # Interview Agendas
-## 1. Internal Operational Stakeholder Interview Agenda
+## 1. External Operational Stakeholder Interview Agenda
 
 This agenda focuses on gathering detailed **Functional Requirements** and quantifying **current system pain points** from employees involved in the daily order workflow.
 
@@ -118,7 +118,7 @@ This agenda focuses on gathering detailed **Functional Requirements** and quanti
 | **Logistics & Shipping**       | Kirollos Raafat (Logistics & Shipping)               | Logistics Staff                      | What are the most common reasons for shipment planning delays (e.g., missing courier rate information, external system integration failures)?               | Logistics plans shipment. The system relies on **external partners’ systems** (couriers).                                                               |
 | **Customer Support**           | Abdelrahman Amr (Customer Support & Reporting)       | Customer Support Agents              | When managing returns and refunds, what information does the current system lack that would most improve resolution time?                                   | Customer Support handles the **returns & refunds workflow**.                                                                                            |
 
-## 2. Internal Executive Stakeholder Interview Agenda
+## 2. External Executive Stakeholder Interview Agenda
 
 This agenda focuses on high-level strategic alignment, **Non-Functional Requirements** (such as Reliability and Performance), and defining metrics for success.
 
@@ -129,6 +129,17 @@ This agenda focuses on high-level strategic alignment, **Non-Functional Requirem
 | **Reporting Needs**         | Ali Tamer (Team Leader), Abdelrahman Amr (Reporting), Abdelrahman Ahmed (Finance) | Management / Executives      | What are the three most critical **Key Performance Indicators (KPIs)** you need to monitor daily or weekly using the system’s reports?                     | Executives use system reports for business decisions. The system must **provide management with integrated reports and analytics**. |
 | **System Reliability (R1)** | Ali Tamer (Team Leader), Abdelrahman Amr (Reporting), Abdelrahman Ahmed (Finance) | Management / Executives      | How critical is system reliability, particularly the requirement for **24/7 availability** with no unscheduled downtime?                                   | **Reliability requirements (R1)** state the system must be available 24/7.                                                          |
 | **Scope Management**        | Ali Tamer (Team Leader), Abdelrahman Amr (Reporting), Abdelrahman Ahmed (Finance) | Management / Executives      | What oversight mechanisms should be put in place to ensure the project focuses only on **core order management** and avoids expanding into excluded areas? | The project **excludes marketing or HR/accounting modules**.                                                                        |
+
+---
+### 3. Internal Stakeholder Interview Agenda
+
+This agenda aligns the project team on architecture, technical constraints, and risk considerations.
+
+| Agenda Item Focus                                                       | Interviewer(s)                 | Interviewee(s)              | Discussion Questions                                                                                                        | Purpose                                                          |
+| :---------------------------------------------------------------------- | :----------------------------- | :-------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------- |
+| **Technical Architecture & Integration**                                | Team Leader                    | Developers / Technical Team | What integration constraints exist for suppliers, courier APIs, and payment gateways? What design standards must we follow? | Establish consistent architecture decisions.                     |
+| **SDLC & Task Coordination**                                            | Team Leader                    | Development Team            | How should we divide tasks to ensure consistent progress? What risks (technical or scheduling) need mitigation?             | Internal alignment on planning and execution.                    |
+| **Non-Functional Requirements (Performance, Security, Supportability)** | Team Leader / Senior Developer | Developers                  | What performance thresholds must be designed into the system? What security and audit controls do we need to implement?     | Ensures system design satisfies NFRs identified with the client. |
 
 ---
 # Questionnaire
@@ -196,11 +207,11 @@ Non-functional requirements describe system characteristics, constraints, and pe
 |**Security**|**S1:** The system must meet all current industry standards for securely handling customer payment details (Finance).|[ ]|[ ]|[ ]|[ ]|[ ]|
 
 8. **Open Feedback:** Please provide any additional suggestions regarding current processes or essential features the new E-OMS must include to make your job more efficient.
-    - 
+    
 
 ---
 # Activity Diagram
-![[ActivityDiagram1.jpg]]
+![Activity Diagram](../Activity_Diagram/ActivityDiagram1.jpg)
 
 ---
 # Screenshots from Jira & GitHub
@@ -208,12 +219,15 @@ Non-functional requirements describe system characteristics, constraints, and pe
 ## Jira
 >Our team utilized Jira for the comprehensive organization and monitoring of Deliverable #1. We structured the project by creating a main Epic, Deliverable #1: System Analysis & Requirements, which served as a container for all related work. This Epic was broken down into User Stories, with each story corresponding to a major section of the technical report, such as the System Vision Document and Workflow Documentation. To ensure clear accountability and a granular breakdown of work, some stories were further divided into specific sub-tasks, which were then assigned to individual team members based on their project roles. Progress was actively monitored using our board, allowing the team leader to visually track tasks as they moved from To Do to In Progress and Done, ensuring all project goals were met on schedule.
 
-![[Pasted image 20251025210805.png]]
-![[image.webp]]
+![Jira Screenshot 1](../Screenshots/Jira1.png)
+
+![Jira Screenshot 2](../Screenshots/Jira2.png)
 
 ## GitHub
 https://github.com/Kiro-create/E-Commerce-Order-Management-System-E-OMS-
 
-![[Pasted image 20251025210935.png]]
-![[Pasted image 20251025210955.png]]
-![[Pasted image 20251025211021.png]]
+![GitHub Screenshot 1](../Screenshots/GitHub1.png)
+
+![GitHub Screenshot 2](../Screenshots/GitHub2.png)
+
+![GitHub Screenshot 3](../Screenshots/GitHub3.png)
